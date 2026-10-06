@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terminalqr"
+version = "0.1.0"
+description = "A dependency-free QR Model 2 encoder and terminal renderer"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+terminalqr = "terminalqr:main"
+
+[tool.setuptools]
+py-modules = ["terminalqr"]
