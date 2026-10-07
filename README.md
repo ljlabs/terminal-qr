@@ -21,6 +21,22 @@ print(render_terminal(matrix))
 print_qr("https://example.com", label="Scan to open:")
 ```
 
+## Install from GitHub
+
+```console
+python -m pip install git+https://github.com/ljlabs/terminal-qr.git
+```
+
+Then use it from Python or print a QR code from the command line:
+
+```python
+from terminalqr import print_qr
+
+print_qr("hello world")
+```
+
+![QR code encoding “hello world”](examples/hello-world.svg)
+
 ## Command line
 
 ```console
